@@ -1,0 +1,168 @@
+:root {
+	--color-primary: #025c71;
+	--color-secondary: #8B9EB7;
+}
+
+.primary {
+	background: var(--color-primary)!important;
+	color: #fff;
+}
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover, .button:hover {
+	opacity: 0.8;
+}
+body {
+	font-family: Arial;
+}
+
+
+.container {
+	margin: 2.5rem 5rem;
+}
+
+
+
+.navbar {
+	height: 60px;
+	padding: 0 5rem;
+	background: #fff;
+}
+.navbar, .navbar-start {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.burger {
+	flex-direction: column;
+	display: none;
+}
+.burger-icon {
+	width: 30px;
+	height: 2px;
+	margin: 2px;
+	background: #000;
+}
+@media (max-width: 900px) {
+	.burger {
+		display: flex;
+	}
+	.navbar-content {
+		display: none;
+	}
+	.navbar-start {
+		width: 100%;
+	}
+}
+
+
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+.form .input {
+	margin-bottom: 0.5rem;
+}
+.input {
+	padding: 0.5rem;
+	font-size: inherit;
+	border: none;
+	box-shadow: 0 1px 2px 2px rgba(0,0,0,0.1);
+}
+.input:focus {
+	outline: none;
+}
+.button {
+	padding: 0.75rem 1.5rem;
+	background: #eee;
+	cursor: pointer;
+	font-size: inherit;
+	box-shadow: 0 2px 2px 2px rgba(0,0,0,0.1);
+	border: none;
+	display: inline-block;
+}
+.buttons {
+	margin-top: 0.75rem;
+}
+.buttons > .button:not(:first-child) {
+	margin-left: 0.5rem;
+}
+
+
+
+.hero {
+	height: 60vh;
+	width: 100%;
+	background: url("../img/hero-image.avif") no-repeat center center;
+	background-size: cover;
+}
+.hero-body {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1, .title {
+	color: var(--color-primary);
+	font-size: 3rem;
+}
+
+.size-3 {
+	font-size: 1.5rem;
+}
+
+
+
+.columns {
+	display: flex;
+	gap: 2rem;
+}
+.full-width {
+	width: 100%!important;
+}
+.one-half {
+	width: 50%;
+}
+.one-third {
+	width: 33.3%;
+}
+
+.card {
+	padding: 2rem;
+	box-shadow: 0 1px 2px 2px rgba(0,0,0,0.1);
+	background: #eee;
+	width: inherit;
+}
+
+.centered {
+	margin: auto;
+}
+.content-centered {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+
+
+
+
+.footer {
+	background: #eee;
+	min-height: 30vh;
+	padding: 1rem 0;
+}
